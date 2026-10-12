@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Check python'){
             steps{
-                bat 'python --version'
+                bat '"C:\Users\DanduNitheshVardhan\IdeaProjects\nithesh_PYJ\.venv\Scripts\python.exe" --version'
             }
         }
         stage('Run python'){
             steps {
-                bat 'python main.py'
+                bat '"C:\Users\DanduNitheshVardhan\IdeaProjects\nithesh_PYJ\.venv\Scripts\python.exe "main.py'
             }
         }
     }
